@@ -17,6 +17,11 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salida</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .tabMin {
+            font-size: .8em;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -55,11 +60,11 @@ while ($resul = $cs -> fetchArray()) {
     echo '
 
     <tr>
-        <td scope="row">'.$numIdentData.'</td>
-        <td>'.$nomCompleto.'</td>
-        <td>'.$fecha.'</td>
-        <td>'.$hEnt.'</td>
-        <td>'.$hSal.'</td>
+        <td scope="row" class="tabMin">'.$numIdentData.'</td>
+        <td class="tabMin">'.$nomCompleto.'</td>
+        <td class="tabMin">'.$fecha.'</td>
+        <td class="tabMin">'.$hEnt.'</td>
+        <td class="tabMin">'.$hSal.'</td>
     </tr>
     
     ';
